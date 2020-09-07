@@ -16,7 +16,18 @@ php artisan migrate
 
 ## О выполнении задания
 
-* еонсольная команда, удаляющая книги более 1 года назад вызывается
+* консольная команда, удаляющая книги более 1 года назад вызывается
 ```shell script
 php artisan books:clear
+```
+
+## API Роуты
+
+Выводит JSON список книг
+```shell script
+api/books/list
+```
+Выводит информацию по книге
+```shell script
+api/books/find/{id}
 ```
